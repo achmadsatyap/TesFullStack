@@ -3,7 +3,7 @@
 @section('container')
 
 <h1>
-  Home
+  Menu
 </h1>
 
 @endsection
