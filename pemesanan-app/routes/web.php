@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MakananController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/',  function () {
     return view('index');
 });
 Route::get('/about', function () {
@@ -22,3 +23,6 @@ Route::get('/about', function () {
 Route::get('/menu', function () {
     return view('menu');
 });
+
+Route::get('/makanan', [MakananController::class, 'index']);
+Route::get('/post', [MakananController::class, 'index']);

@@ -15,9 +15,9 @@ class CreatePostsTable extends Migration
     {
         Schema::create('makanan', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('content');
-            $table->timestamps();
+            $table->string('makanan');
+            $table->string('harga');
+            $table->blob('gambar');
         });
     }
 
