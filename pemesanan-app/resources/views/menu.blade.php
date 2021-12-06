@@ -31,8 +31,8 @@
                             <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </a>
                         <ul class="collapse show list-unstyled pl-3">
-                            <li><a class="text-decoration-none" href="#">Makanan</a></li>
-                            <li><a class="text-decoration-none" href="#">Minuman</a></li>
+                            <li><a class="text-decoration-none" href="/makanan">Makanan</a></li>
+                            <li><a class="text-decoration-none" href="/minuman">Minuman</a></li>
                         </ul>
                     </li>
                 </ul>

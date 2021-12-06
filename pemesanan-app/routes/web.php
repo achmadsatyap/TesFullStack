@@ -24,5 +24,10 @@ Route::get('/menu', function () {
     return view('menu');
 });
 
-Route::get('/makanan', [MakananController::class, 'index']);
+Route::get('/makanan', function () {
+    return view('makanan');
+});
+Route::get('/minuman', function () {
+    return view('minuman');
+});
 Route::get('/post', [MakananController::class, 'index']);

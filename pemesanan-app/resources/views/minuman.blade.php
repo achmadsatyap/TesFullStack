@@ -1,7 +1,6 @@
 @extends('layouts/main')
 
 @section('conten')
-
 <!-- Modal -->
 <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -55,10 +54,11 @@
                     </div>
                 </div>
                 <div class="row">
+                   
                     <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/1200px-Mi_ayam_jamur.jpg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/8e38a67a548a8643abe6587499ea4c44.jpg">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -68,15 +68,15 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Mie Ayam</a>
-                                <p class="text-center mb-0">Rp. 15.000</p>
+                                <a href="shop-single.html" class="h3 text-decoration-none">Es Teh</a>
+                                <p class="text-center mb-0">Rp. 4.000</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/Resep-Ayam-geprek-jogja.jpg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/097384400_1528762027-Es_jeruk-pinteest.jpg">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -86,12 +86,11 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Ayam Geprek</a>
-                                <p class="text-center mb-0">Rp. 17.000</p>
+                                <a href="shop-single.html" class="h3 text-decoration-none">Es Jeruk</a>
+                                <p class="text-center mb-0">Rp. 5.000</p>
                             </div>
                         </div>
                     </div>
-                    
                         <div div="row">
                     <ul class="pagination pagination-lg justify-content-end">
                         <li class="page-item disabled">
@@ -129,4 +128,5 @@
 
     </footer>
     <!-- End Footer -->
-    @endsection
+
+@endsection
