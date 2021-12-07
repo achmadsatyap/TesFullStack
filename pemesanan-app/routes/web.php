@@ -20,14 +20,8 @@ Route::get('/',  function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/menu', function () {
-    return view('menu');
-});
-
-Route::get('/makanan', function () {
-    return view('makanan');
-});
-Route::get('/minuman', function () {
-    return view('minuman');
-});
-Route::get('/post', [MakananController::class, 'index']);
+Route::get('/menu', [ProductController::class, 'menu']);
+Route::get('cart', [ProductController::class, 'cart'])->name('cart');
+Route::get('add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('add.to.cart');
+Route::patch('update-cart', [ProductController::class, 'update'])->name('update.cart');
+Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('remove.from.cart');
