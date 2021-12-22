@@ -17,30 +17,29 @@ class ProductSeeder extends Seeder
         $products = [
             [
                 'name' => 'Mie Ayam',
-                'description' => 'Makanan',
-                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMie_ayam&psig=AOvVaw2cwBs1Rhbc2fStAaJgkgEE&ust=1638930593951000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCwh7LS0PQCFQAAAAAdAAAAABAD',
+                'description' => 'Mie',
+                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMie_ayam&psig=AOvVaw3Q7UUK7Ip9IdYzPVmOZZ82&ust=1640278121704000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDtkKnu9_QCFQAAAAAdAAAAABAD',
                 'price' => 15000
             ],
             [
                 'name' => 'Ayam Geprek',
-                'description' => 'Makanan',
-                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fresepkoki.id%2Fresep%2Fresep-ayam-geprek-jogja%2F&psig=AOvVaw2eOczS6UAKZDuVwG9NaROf&ust=1638930627255000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCqpcHS0PQCFQAAAAAdAAAAABAD',
+                'description' => 'Ayam',
+                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAyam_geprek&psig=AOvVaw1C9uZ_mjJzKMXACgANGazO&ust=1640278147713000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPid7LXu9_QCFQAAAAAdAAAAABAD',
                 'price' => 17000
             ],
             [
                 'name' => 'Es Teh',
-                'description' => 'Minuman',
-                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.co.id%2FEs-teh-i.87878399.4407154170&psig=AOvVaw27Phi9RJJghVKD-vxCYUQ8&ust=1638930570676000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj9mabS0PQCFQAAAAAdAAAAABAD',
+                'description' => 'Teh',
+                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.idntimes.com%2Ffood%2Fdining-guide%2Fprila-arofani%2Fkumpulan-foto-berbagai-kreasi-es-teh&psig=AOvVaw27lW1sW-_M7eJnFUlan9lU&ust=1640278169125000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCuhcXu9_QCFQAAAAAdAAAAABAD',
                 'price' => 4000
             ],
             [
                 'name' => 'Es Jeruk',
-                'description' => 'Minuman',
-                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yummy.co.id%2Fblog%2Fresep-komunitas%2Fes-jeruk-peras&psig=AOvVaw00o0Ze6ut-KIkGsBAbYpk_&ust=1638930977191000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiYserT0PQCFQAAAAAdAAAAABAO',
+                'description' => 'Jeruk',
+                'image' => 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.co.id%2FEs-Jeruk-Peras-i.313542002.6154241933&psig=AOvVaw3sA5dD9g3Urbu58iPlf9Ay&ust=1640278212257000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDEht7u9_QCFQAAAAAdAAAAABAD',
                 'price' => 5000
             ]
         ];
-  
         foreach ($products as $key => $value) {
             Product::create($value);
         }
