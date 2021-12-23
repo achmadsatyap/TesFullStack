@@ -13,9 +13,18 @@
     </thead>
     <tbody>
         @php $total = 0 @endphp
+        @php $subtotal  =  0 @endphp
+        @php $diskon = 0 @endphp
         @if(session('cart'))
             @foreach(session('cart') as $id => $details)
                 @php $total += $details['price'] * $details['quantity'] @endphp
+                @if($total >= 40000)
+                    @php $diskon = ($total / 100 * 30)  @endphp
+                @elseif($diskon)
+                    @php $subtotal = ($total - $diskon) + 5000 @endphp
+                @else
+                    @php $subtotal = ($total + 5000) @endphp
+                @endif
                 <tr data-id="{{ $id }}">
                     <td data-th="Product">
                         <div class="row">

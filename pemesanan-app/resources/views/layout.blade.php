@@ -25,8 +25,15 @@
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
                         </div>
                         @php $total = 0 @endphp
+                        @php $subtotal = 0 @endphp
+                        @php $diskon = 0 @endphp
                         @foreach((array) session('cart') as $id => $details)
                             @php $total += $details['price'] * $details['quantity'] @endphp
+                        @if($total >= 40000)
+                            @php $diskon = ($total / 100 * 30)  @endphp
+                        @else
+                            @php $subtotal = ($total + 5000) @endphp
+                        @endif
                         @endforeach
                         <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
                             <p>Total: <span class="text-info">Rp {{ $total }}</span></p>
