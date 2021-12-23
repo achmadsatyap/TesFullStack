@@ -15,16 +15,20 @@
         @php $total = 0 @endphp
         @php $subtotal  =  0 @endphp
         @php $diskon = 0 @endphp
+        @php $ongkir = 5000 @endphp
+        @php $promomaksimal = 30000 @endphp
         @if(session('cart'))
             @foreach(session('cart') as $id => $details)
                 @php $total += $details['price'] * $details['quantity'] @endphp
-                @if($total >= 40000)
-                    @php $diskon = ($total / 100 * 30)  @endphp
-                @elseif($diskon)
-                    @php $subtotal = ($total - $diskon) + 5000 @endphp
-                @else
-                    @php $subtotal = ($total + 5000) @endphp
+                @php $diskon = ($total / 100 * 30) @endphp
+                @if($total >= 40000 && $diskon < $promomaksimal)
+                    @php $subtotal = ($total - $diskon) + $ongkir  @endphp
+                @elseif($total >= 40000 && $diskon > $promomaksimal)
+                    @php $subtotal = ($total - $promomaksimal) + $ongkir @endphp
+                @elseif ($total < 40000 )
+                    @php $subtotal = ($total + $ongkir) @endphp
                 @endif
+                
                 <tr data-id="{{ $id }}">
                     <td data-th="Product">
                         <div class="row">
@@ -48,7 +52,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="5" class="text-right"><h3><strong>Total Rp {{ $total }}</strong></h3></td>
+            <td colspan="5" class="text-right"><h3><strong>Total Rp {{ $subtotal }}</strong></h3></td>
         </tr>
         <tr>
             <td colspan="5" class="text-right">
