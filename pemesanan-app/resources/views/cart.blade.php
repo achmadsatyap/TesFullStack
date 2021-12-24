@@ -52,6 +52,8 @@
     </tbody>
     <tfoot>
         <tr>
+            <td colspan="5" class="text-right"><h3><strong>Harga Awal Rp {{ $total }}</strong></h3></td>
+        </tr>
             <td colspan="5" class="text-right"><h3><strong>Total Rp {{ $subtotal }}</strong></h3></td>
         </tr>
         <tr>
